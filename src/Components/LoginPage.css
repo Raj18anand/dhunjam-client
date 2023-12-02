@@ -28,18 +28,32 @@
     border: 2px solid #ffffff;
     border-radius: 13px;
     height: 35px;
+    /* margin-top: 8px;
+    margin-bottom: 8px; */
     margin: 8px;
     padding: 8px;
     color: #ffffff;
     background-color: transparent;
     outline: none;
   }
+
+  .password-input-field{
+    position: relative;
+  }
+
+  .eye-icon{
+    position: absolute;
+    top: 38%;
+  right: 1%;
+  cursor: pointer;
+  }
   
-  .save-button {
+  .signin-button {
     width: 600px;
     background-color: #6741d9;
     color: #ffffff;
     border-radius: 13px;
+    /* margin-top: 10px; */
     margin: 8px;
     padding: 8px;
     height: 54px;

@@ -44,9 +44,8 @@
     width: 300px;
   }
   
-  .radio-button {
-    /* background-color: #FFFFFF; */
-    /* margin-left: 20px; */
+  .radioButtonDisabled{
+    background-color: #c2c2c2;
   }
   
   .radio-button:checked {
@@ -63,6 +62,11 @@
     height: 35px;
     color: #FFFFFF;
     text-align: center;
+  }
+
+  .custom-text-field.disabled{
+    color:#c2c2c2;
+    border-color: #c2c2c2;
   }
 
   .text-fields{
@@ -84,6 +88,11 @@
     /* margin-right: 10px; */
   }
 
+  .regular-text-field.disabled{
+    color:#c2c2c2;
+    border-color: #c2c2c2;
+  }
+
   .form-item input::placeholder{
     color:#fff;
     opacity: 1;
@@ -99,6 +108,19 @@
     background-color: #6741D9;
     width: 600px;
     margin: 0 auto;
+    color: #ffffff;
+    border-radius: 13px;
+    /* margin-top: 10px; */
+    /* margin: 8px;
+    padding: 8px; */
+    height: 54px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .save-button.disabled{
+    background-color: #c2c2c2;
   }
   
   .save-button:hover,

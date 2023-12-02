@@ -15,7 +15,7 @@ const HomePage = () => {
         username: username,
         password: password,
     }
-    await axios.post(`/login`, requestData)
+    await axios.post(`https://stg.dhunjam.in/account/admin/login`, requestData)
     .then(response => {
         console.log('Login successful', response.data);
         setId(response.data.data.id);
@@ -28,7 +28,7 @@ const HomePage = () => {
 
   const getAdminDetails = async (id) => {
     console.log(id);
-    await axios.get(`/${id}`)
+    await axios.get(`https://stg.dhunjam.in/account/admin/${id}`)
     .then(response => {
         console.log('Admin Details', response.data);
         setData(response.data.data);
