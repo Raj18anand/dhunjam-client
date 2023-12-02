@@ -37,7 +37,6 @@
 }
 
 .radio-buttons {
-  /* display: contents; */
   width: 300px;
 }
 
@@ -50,7 +49,6 @@
 }
 
 .custom-text-field {
-  /* border: 1px solid #FFFFFF; */
   width: 300px;
   border: 2px solid #ffffff;
   border-radius: 13px;
@@ -73,7 +71,6 @@
 }
 
 .regular-text-field {
-  /* border: 1px solid #FFFFFF; */
   width: 50px;
   border: 2px solid #ffffff;
   border-radius: 13px;
@@ -82,7 +79,6 @@
   height: 35px;
   color: #ffffff;
   text-align: center;
-  /* margin-right: 10px; */
 }
 
 .regular-text-field.disabled {
@@ -93,7 +89,6 @@
 .form-item input::placeholder {
   color: #fff;
   opacity: 1;
-  /* text-align: center; */
 }
 
 .graph {
@@ -107,9 +102,6 @@
   margin: 0 auto;
   color: #ffffff;
   border-radius: 13px;
-  /* margin-top: 10px; */
-  /* margin: 8px;
-    padding: 8px; */
   height: 54px;
   cursor: pointer;
   font-weight: bold;
@@ -125,4 +117,4 @@
   border: 1px solid #f0c3f1;
 }
 
-/* Add styles for graph bars, axis, markings, and greyed-out fields as needed */
+

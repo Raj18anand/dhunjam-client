@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./LoginPage.css"; // Import your stylesheet
+import "./LoginPage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEyeSlash, faEye } from "@fortawesome/free-solid-svg-icons";
 import {

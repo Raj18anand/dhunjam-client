@@ -1,4 +1,3 @@
-// HomePage.jsx
 import React, { useState } from "react";
 import LoginPage from "./LoginPage";
 import "./LoginPage.css";

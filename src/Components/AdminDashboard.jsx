@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./AdminDashboard.css"; // Import your CSS file for styling
+import "./AdminDashboard.css";
 import Graph from "./Graph";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
@@ -21,7 +21,6 @@ const AdminDashboard = () => {
   const [saveButtonDisabled, setSaveButtonDisabled] = useState(true);
 
   useEffect(() => {
-    // Check conditions for Save button
 
     const isSaveButtonDisabled =
       chargeCustomers &&
@@ -30,7 +29,6 @@ const AdminDashboard = () => {
         (amount, index) => parseInt(amount, 10) > [79, 59, 39, 19][index]
       );
 
-    //   console.log(chargeCustomers,customAmount,regularAmounts,isSaveButtonDisabled);
 
     setSaveButtonDisabled(!isSaveButtonDisabled);
   }, [chargeCustomers, customAmount, regularAmounts]);

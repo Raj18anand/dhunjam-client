@@ -7,7 +7,7 @@ const CustomTooltip = () => null;
 
 const Graph = ({ customAmount, regularAmounts }) => {
   const data = [
-    { name: "Custom", data: parseInt(customAmount, 10) || 0 }, // Use parseInt to ensure it's a number
+    { name: "Custom", data: parseInt(customAmount, 10) || 0 },
     { name: "Category 1", data: parseInt(regularAmounts[0], 10) || 0 },
     { name: "Category 2", data: parseInt(regularAmounts[1], 10) || 0 },
     { name: "Category 3", data: parseInt(regularAmounts[2], 10) || 0 },
@@ -16,7 +16,6 @@ const Graph = ({ customAmount, regularAmounts }) => {
 
   return (
     <div>
-      {/* <h2>Bar Graph</h2> */}
       <BarChart width={600} height={400} data={data}>
         <XAxis dataKey="name" axisLine={{ stroke: '#ffffff' }}/>
         <YAxis tick={false} label={<CurrencyRupeeIcon />} axisLine={{ stroke: '#ffffff' }}/>
