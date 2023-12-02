@@ -10,6 +10,7 @@ const HomePage = () => {
   const [id, setId] = useState();
   const [data, setData] = useState();
   const navigate = useNavigate();
+  const [loginError, setLoginError] = useState(false);
 
   const handleLogin = async (username, password) => {
     const requestData = {
@@ -25,6 +26,7 @@ const HomePage = () => {
       })
       .catch((error) => {
         console.error("Error during login:", error);
+        setLoginError(true);
       });
   };
 
@@ -47,7 +49,7 @@ const HomePage = () => {
 
   return (
     <div className="home-container">
-      <LoginPage onLogin={handleLogin} />
+      <LoginPage onLogin={handleLogin} loginError={loginError} />
     </div>
   );
 };

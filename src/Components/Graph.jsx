@@ -18,8 +18,8 @@ const Graph = ({ customAmount, regularAmounts }) => {
     <div>
       {/* <h2>Bar Graph</h2> */}
       <BarChart width={600} height={400} data={data}>
-        <XAxis dataKey="name" />
-        <YAxis tick={false} label={<CurrencyRupeeIcon />} />
+        <XAxis dataKey="name" axisLine={{ stroke: '#ffffff' }}/>
+        <YAxis tick={false} label={<CurrencyRupeeIcon />} axisLine={{ stroke: '#ffffff' }}/>
         <Tooltip
           isAnimationActive={false}
           content={<CustomTooltip />}

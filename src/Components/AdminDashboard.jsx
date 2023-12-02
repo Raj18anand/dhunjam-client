@@ -97,9 +97,9 @@ const AdminDashboard = () => {
 
   return (
     <div className="admin-container">
-      <h1 className="heading">
+      <div className="heading">
         {data.name}, {data.location} on Dhun Jam
-      </h1>
+      </div>
       <form className="form-container">
         <div className="form-item">
           <label className="label">

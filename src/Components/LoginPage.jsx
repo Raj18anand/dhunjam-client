@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 
-const LoginPage = ({ onLogin }) => {
+const LoginPage = ({ onLogin,loginError }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState("");
@@ -27,7 +27,7 @@ const LoginPage = ({ onLogin }) => {
 
   return (
     <div className="login-container">
-      <h2 className="heading">Venue Admin Login</h2>
+      <div className="heading">Venue Admin Login</div>
       <form>
         <div className="input-container">
           <input
@@ -46,10 +46,11 @@ const LoginPage = ({ onLogin }) => {
             onChange={(e) => setPassword(e.target.value)}
             className="input-field"
           />
-          {/* <div className="eye-icon">
+          <div className="eye-icon">
           <FontAwesomeIcon icon={showPassword ? faEyeSlash:faEye} onClick={handleTogglePassword} />
-          </div> */}
+          </div>
         </div>
+        {loginError && <p style={{marginLeft:'8px'}}>Invalid Username or Password. Please enter again.</p>}
         <button type="button" onClick={handleSubmit} className="signin-button">
           Sign in
         </button>
