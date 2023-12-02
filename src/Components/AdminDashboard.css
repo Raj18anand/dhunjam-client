@@ -1,132 +1,127 @@
-.admin-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-  
-  .heading {
-    font-size: 32px;
-    width: 600px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  
-  .form-container {
-    width: 600px;
-    margin: 0 auto;
-  }
-  
-  .form-item {
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-  }
-
-  .form-item div{
-    
-  }
-  
-  .label {
-    display: block;
-    margin-bottom: 5px;
-    width: 300px;
-    word-wrap: break-word;
-    text-align: left;
-    padding-right: 50px;
-  }
-
-  .radio-buttons{
-    /* display: contents; */
-    width: 300px;
-  }
-  
-  .radioButtonDisabled{
-    background-color: #c2c2c2;
-  }
-  
-  .radio-button:checked {
-    background-color: #6741D9;
-  }
-  
-  .custom-text-field {
-    /* border: 1px solid #FFFFFF; */
-    width: 300px;
-    border: 2px solid #ffffff;
-    border-radius: 13px;
-    background-color: transparent;
-    outline: none;
-    height: 35px;
-    color: #FFFFFF;
-    text-align: center;
-  }
-
-  .custom-text-field.disabled{
-    color:#c2c2c2;
-    border-color: #c2c2c2;
-  }
-
-  .text-fields{
-    width:300px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .regular-text-field {
-    /* border: 1px solid #FFFFFF; */
-    width: 50px;
-    border: 2px solid #ffffff;
-    border-radius: 13px;
-    background-color: transparent;
-    outline: none;
-    height: 35px;
-    color: #FFFFFF;
-    text-align: center;
-    /* margin-right: 10px; */
-  }
-
-  .regular-text-field.disabled{
-    color:#c2c2c2;
-    border-color: #c2c2c2;
-  }
-
-  .form-item input::placeholder{
-    color:#fff;
-    opacity: 1;
-    /* text-align: center; */
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.graph{
-    margin-bottom: 20px;
-    margin-top: 30px;
+.heading {
+  font-size: 32px;
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
-  
-  .save-button {
-    background-color: #6741D9;
-    width: 600px;
-    margin: 0 auto;
-    color: #ffffff;
-    border-radius: 13px;
-    /* margin-top: 10px; */
-    /* margin: 8px;
+
+.form-container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.form-item {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  width: 300px;
+  word-wrap: break-word;
+  text-align: left;
+  padding-right: 50px;
+}
+
+.radio-buttons {
+  /* display: contents; */
+  width: 300px;
+}
+
+.radioButtonDisabled {
+  background-color: #c2c2c2;
+}
+
+.radio-button:checked {
+  background-color: #6741d9;
+}
+
+.custom-text-field {
+  /* border: 1px solid #FFFFFF; */
+  width: 300px;
+  border: 2px solid #ffffff;
+  border-radius: 13px;
+  background-color: transparent;
+  outline: none;
+  height: 35px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.custom-text-field.disabled {
+  color: #c2c2c2;
+  border-color: #c2c2c2;
+}
+
+.text-fields {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.regular-text-field {
+  /* border: 1px solid #FFFFFF; */
+  width: 50px;
+  border: 2px solid #ffffff;
+  border-radius: 13px;
+  background-color: transparent;
+  outline: none;
+  height: 35px;
+  color: #ffffff;
+  text-align: center;
+  /* margin-right: 10px; */
+}
+
+.regular-text-field.disabled {
+  color: #c2c2c2;
+  border-color: #c2c2c2;
+}
+
+.form-item input::placeholder {
+  color: #fff;
+  opacity: 1;
+  /* text-align: center; */
+}
+
+.graph {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.save-button {
+  background-color: #6741d9;
+  width: 600px;
+  margin: 0 auto;
+  color: #ffffff;
+  border-radius: 13px;
+  /* margin-top: 10px; */
+  /* margin: 8px;
     padding: 8px; */
-    height: 54px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 16px;
-  }
+  height: 54px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
 
-  .save-button.disabled{
-    background-color: #c2c2c2;
-  }
-  
-  .save-button:hover,
-  .save-button:active {
-    border: 1px solid #F0C3F1;
-  }
-  
-  /* Add styles for graph bars, axis, markings, and greyed-out fields as needed */
-  
+.save-button.disabled {
+  background-color: #c2c2c2;
+}
+
+.save-button:hover,
+.save-button:active {
+  border: 1px solid #f0c3f1;
+}
+
+/* Add styles for graph bars, axis, markings, and greyed-out fields as needed */

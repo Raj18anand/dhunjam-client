@@ -1,11 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import HomePage from './Components/HomePage';
+import logo from "./logo.svg";
+import "./App.css";
+import HomePage from "./Components/HomePage";
+import AppRoutes from "./AppRoutes";
 
 function App() {
   return (
-    <div className="App">
-      <HomePage></HomePage>
+    <div className="app">
+      <AppRoutes />
     </div>
   );
 }
